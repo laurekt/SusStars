@@ -9,7 +9,13 @@ import SwiftUI
 
 struct Styling: View {
     var body: some View {
-        Text("Tips and tricks to work your way around a closet full of old clothes!")
+       
+        Image("style")
+            .resizable(resizingMode: .stretch)
+            .ignoresSafeArea()
+        
+        
+    
     }
 }
 

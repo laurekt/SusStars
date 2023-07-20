@@ -9,7 +9,34 @@ import SwiftUI
 
 struct DiyInspo: View {
     var body: some View {
-        Text("Give reworking your old clothes or other creations a try!")
+        
+        NavigationStack {
+            ZStack {
+                
+                    Image("diy")
+                        .resizable(resizingMode: .stretch)
+                        .ignoresSafeArea()
+                    
+                VStack {
+                    Spacer()
+                    NavigationLink(destination: test()) {
+                        Image("shoulder")
+                            .renderingMode(.original)
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .scaledToFit()
+                        .padding() }
+                    
+                    NavigationLink(destination: oooclothes()) {
+                        Image("stripe")
+                            .renderingMode(.original)
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .scaledToFit()
+                        .padding(.all, 30.0)}
+                }
+            }
+        }
     }
 }
 

@@ -21,28 +21,37 @@ struct ContentView: View {
                       Spacer()
                         .padding(.vertical, 160)
                     NavigationLink(destination: Thrifting()) {
-                        Text("thrifting")
-                            .font(.title2)
-                            .fontWeight(.semibold)
+                        Image("thrifting")
+                            .renderingMode(.original)
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .scaledToFit()
+                            .padding()
+                            
+                            
                         
                     }
                     
                     
                     NavigationLink(destination: Styling()) {
-                        Text("styling tips")
-                            .font(.title2)
-                            .fontWeight(.semibold)
+                        Image("stylingtips")
+                            .resizable(resizingMode: .stretch)
+                            
+                            
                     }
                     
-                    .padding(100)
+                    
                     
                     NavigationLink(destination: DiyInspo()) {
-                        Text("diy inspo")
-                            .font(.title2)
-                            .fontWeight(.semibold)
+                        Image("diyinspo")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .scaledToFit()
+                            .padding()
                         
+                       
                         //sewing, thrifting, diy
-                        
+                            
                     }
                     Spacer()
                         .padding()

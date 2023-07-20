@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct Thrifting: View {
+    
     var body: some View {
-        Text("Discover people's stylish, sustainable finds!")
+        ZStack {
+            VStack {
+                Image("thirff")
+                    .resizable(resizingMode: .stretch)
+                    .ignoresSafeArea()
+                
+                
+                
+                
+            }
+        }
     }
 }
 
